@@ -1,16 +1,26 @@
 What happens when...
+কী হয় যখন...
 ====================
 
 This repository is an attempt to answer the age-old interview question "What
 happens when you type google.com into your browser's address box and press
 enter?"
 
+এই রিপোজিটরিতে বহু পুরনো একটা ইন্টারভিউ প্রশ্নের উত্তর করার চেষ্টা করা হয়েছে। প্রশ্নটা হলো,
+"কী হয় যখন আমরা ব্রাউজারের অ্যাড্রেস বক্সে google.com লেখি, এবং তারপর এন্টার বাটনে চাপ দেই?"
+
+
 Except instead of the usual story, we're going to try to answer this question
 in as much detail as possible. No skipping out on anything.
+সাধারণত যেই উত্তর দেয়া হয়, আমরা তেমনটা করব না। আমরা বরং যতটা সম্ভব বিস্তারিত বলার
+চেষ্টা করব। কোন কিচ্ছু বাদ যাবে না। 
 
 This is a collaborative process, so dig in and try to help out! There are tons
 of details missing, just waiting for you to add them! So send us a pull
 request, please!
+এটা একার কাজ না। সবারই সাহায্য দরকার। তাই ঘাটাঘাটি করুন, এবং সাহায্য করার চেষ্টা করুন। অনেক 
+ডিটেইল এখনও বাকি আছে। শুধু আপনার জন্য অপেক্ষায় আছে। তাই একটা পুল রিকোয়েস্ট পাঠান, প্লিজ। 
+
 
 This is all licensed under the terms of the `Creative Commons Zero`_ license.
 
@@ -26,6 +36,7 @@ Table of Contents
    :local:
 
 The "g" key is pressed
+যখন কিবোর্ডে "g" - কি চাপেন
 ----------------------
 The following sections explain the physical keyboard actions
 and the OS interrupts. When you press the key "g" the browser receives the
@@ -38,6 +49,9 @@ popular searches from the internet as a whole. As you are typing
 "google.com" many blocks of code run and the suggestions will be refined
 with each keypress. It may even suggest "google.com" before you finish typing
 it.
+এই সেকশনটায় ব্যাখ্যা করব আপনার ফিজিকাল কিবোর্ডের অ্যাকশন এবং OS ইন্টেরাপশন নিয়ে।
+যখন আপনি "g" কি চাপেন আপনার ব্রাউজার একটা ইভেন্ট রিসিভ করে এবং অটো-কমপ্লিট ফাংশন কাজ শুরু করে। 
+
 
 The "enter" key bottoms out
 ---------------------------
@@ -50,7 +64,7 @@ of each key switch, debounces the electrical noise of the rapid intermittent
 closure of the switch, and converts it to a keycode integer, in this case 13.
 The keyboard controller then encodes the keycode for transport to the computer.
 This is now almost universally over a Universal Serial Bus (USB) or Bluetooth
-connection, but historically has been over PS/2 or ADB connections.
+connection but historically has been over PS/2 or ADB connections.
 
 *In the case of the USB keyboard:*
 
